@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استوديو Brave - صناعة محتوى YouTube</title>
+    <style>
+        /* استيراد الخط */
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+        /* إعدادات عامة */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #1a0d05;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* الهيدر */
+        header {
+            background: linear-gradient(135deg, #ff9800, #e65100);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        /* شريط التنقل */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ff9800;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background: #ff9800;
+            color: #1a0d05;
+            transform: scale(1.1);
+        }
+
+        /* الأقسام */
+        section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* معرض الأعمال */
+        .gallery iframe {
+            width: 100%;
+            height: 400px;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.5);
+        }
+
+        /* الفوتر */
+        footer {
+            background: #1a0d05;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        /* جعل الموقع متجاوبًا */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+            }
+
+            .gallery iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>استوديو Brave</h1>
+    </header>
+
+    <nav>
+        <a href="#about">من نحن</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#gallery">معرض الأعمال</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>نحن في استوديو Brave نقدم أفضل خدمات صناعة المحتوى لليوتيوب. نعمل على إنتاج فيديوهات إبداعية واحترافية تلبي احتياجاتك.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <p>نقدم خدمات تحرير الفيديو، المونتاج، تحسين الجودة، وتصميم الصور المصغرة لمقاطع الفيديو.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>معرض الأعمال</h2>
+            <div class="gallery">
+                <iframe src="https://www.youtube.com/embed/1U5iz7PCSGU" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <p>يمكنك التواصل معنا عبر البريد الإلكتروني: <br> <strong>bravesub92@gmail.com</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 استوديو Brave. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
