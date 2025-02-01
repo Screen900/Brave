@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استوديو Brave - صناعة محتوى YouTube</title>
+
+    <!-- إضافة Favicon -->
+    <link rel="icon" href="https://github.com/Screen900/Brave/blob/main/IMG_20250124_223341%20(1).webp?raw=true" type="image/webp">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+        /* إعدادات عامة */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #1a0d05;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* تأثير الخلفية */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* الهيدر */
+        header {
+            background: linear-gradient(135deg, #ff9800, #e65100);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
+        }
+
+        /* شريط التنقل */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ff9800;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ff9800;
+            color: #1a0d05;
+            transform: scale(1.1);
+        }
+
+        /* الأقسام */
+        section {
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(255, 152, 0, 0.5);
+        }
+
+        /* معرض الأعمال */
+        .gallery iframe {
+            width: 100%;
+            height: 400px;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 152, 0, 0.5);
+        }
+
+        /* قائمة الأعضاء */
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .member {
+            background: #ff9800;
+            color: #1a0d05;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(255, 152, 0, 0.5);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .member:hover {
+            transform: scale(1.1);
+        }
+
+        /* روابط التواصل */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .instagram {
+            background: #E4405F;
+        }
+
+        .youtube {
+            background: #FF0000;
+        }
+
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #1a0d05;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        /* جعل الموقع متجاوبًا */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .gallery iframe {
+                height: 250px;
+            }
+
+            .members {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <header>
+    <img src="BackgroundEraser__.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/Screen900/Brave/main/BackgroundEraser__.png';" alt="شعار الاستوديو" style="max-width: 200px; height: auto;">
+    <h1>استوديو Brave</h1>
+</header>
+
+    <nav>
+        <a href="#about">من نحن</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#gallery">معرض الأعمال</a>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>نحن في استوديو Brave نقدم أفضل خدمات صناعة المحتوى لليوتيوب.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <p>تحرير الفيديو، المونتاج، وتحسين الجودة.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>معرض الأعمال</h2>
+            <div class="gallery">
+                <iframe src="https://www.youtube.com/embed/1U5iz7PCSGU" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>أعضاء الاستوديو</h2>
+            <div class="members">
+                <a href="https://youtube.com/@madri998?si=UVeG_qd4_qWbP_il" class="member" target="_blank">مدري</a>
+                <a href="https://youtube.com/@mekdadxd?si=yxyWC7yMtTPX7awq" class="member">مقداد</a>
+                <a href="https://youtube.com/@rayane_5080?si=j2BdRymbvZKdI7q_" class="member">ريان</a>
+                <a href="https://youtube.com/@screen-yb4qb?si=PHWboDS7H2Ka88KC" class="member">سكرين</a>
+                <a href="https://youtube.com/@benson.124?si=DyN_W-KwjT8jNvNm" class="member">بينسون</a>
+                <a href="https://youtube.com/@thatoneweirdcat001?si=9DIWtEAz1SxQlFtw" class="member">خالد شيخ الخوالد</a>
+                <a href="https://youtube.com/channel/UCK36T7smB7tAnFmFYjj8frg?feature=shared" class="member">كلاود</a>
+                <a href="https://youtube.com/@gliz_i3?si=ohexnCnWBYqyB79q" class="member">غليزي</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>تابعونا على مواقع التواصل</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/brave.studio1?igsh=MW8ycm9taTN1Y3hr" class="instagram" target="_blank">Instagram</a>
+                <a href="https://youtube.com/@brave_studio1?si=gFlTBSXP93z9crhM" class="youtube" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 استوديو Brave. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json');
+        ScrollReveal().reveal('section', { delay: 200, distance: '50px', origin: 'bottom' });
+    </script>
+
+</body>
+</html>
